@@ -1,0 +1,15 @@
+{% block header %}
+<div id="logo" class="col-12 col-md-4">
+    <img src="./assets/img/logoheader.png" class="img-fluid" />
+</div>
+
+{% if action is not null and action is same as ('login') %}
+
+{% else %}
+<div id="login_button" class="d-flex align-items-start justify-content-end">
+    <a href="index.php?action=login"><button type="button" class="btn btn-danger btn-md pl-4 pr-4">Connexion</button></a>
+</div>
+
+{% endif %}
+
+{% endblock %}

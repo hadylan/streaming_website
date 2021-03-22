@@ -1,0 +1,13 @@
+{% block content %}
+
+<form class="col-3 offset-1 bg-light p-4 rounded" method="POST" action="./php_scripts/deleteMovie.php">
+    <div class="mb-2">
+        <label for="select_movie" class="form-label">Film / Série à supprimer :</label>
+        <select name="movie" class="form-select text-grey mb-3 w-100" aria-label="Genre" id="select_movie">
+            <option selected>Selectionnez un film</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Supprimer</button>
+</form>
+
+{% endblock %}

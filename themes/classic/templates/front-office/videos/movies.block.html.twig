@@ -1,0 +1,11 @@
+{% block movies %}
+
+    {% for movie in movies %}
+
+    {% if title is same as ('UniStream - Films') or title is same as ('UniStream - Series') %}
+        <a href="./product.php?id={{movie.id}}" class="ml-2 mr-2 mt-3 mb-3"><div class="search_thumbnail" style="background-image: url('{{movie.picture}}'); background-size: 100% 100%;"></div></a>
+    {% endif %}
+
+    {% endfor %}
+
+{% endblock %}

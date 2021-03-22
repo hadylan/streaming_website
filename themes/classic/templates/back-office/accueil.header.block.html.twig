@@ -1,0 +1,30 @@
+{% block header %}
+
+<div id="logo">
+    <img src="./assets/img/logoheader.png" class="img-fluid" />
+</div>
+
+<nav class="mt-4 d-flex justify-content-around col-8 col-sm-4 col-md-3 col-lg-2 p-0">
+    <a href="./accueil.php" class="text-white">Accueil</a>
+    <a href="./films.php" class="text-white">Films</a>
+    <a href="./series.php" class="text-white">Séries</a>
+    <!--<a href="#" class="text-white">Favoris</a>-->
+</nav>
+
+<div id="search" class="d-none justify-content-end d-md-flex">
+    <div id="searchbar" class="rounded-pill">
+    <form action="search.php" method="get" class="d-flex align-items-center justify-content-between">
+        <input type="text" placeholder="Rechercher..." id="search-bar" class="w-75" name="search"/>
+        <button type="submit" class="p-0" id="search_button"><i id="icon" class="fas fa-search"></i></button>
+    </form>
+    </div>
+
+    <div id="profil" class="ml-3 d-flex rounded-circle">
+        <a href="./profil.php">
+            <img class="img-fluid rounded-circle w-100 h-100"
+                src="{{user[0].picture}}" />
+        </a>
+    </div>
+</div>
+
+{% endblock %}

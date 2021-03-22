@@ -1,0 +1,10 @@
+{% block content %}
+<form class="col-3 bg-light p-4 rounded" method="POST" action="./php_scripts/addGender.php">
+    <div class="mb-3">
+        <label for="inputTitle" class="form-label">Titre du nouveau genre</label>
+        <input name="genre" type="text" placeholder="Titre du genre" class="form-control" id="inputTitle"
+            aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-primary">Creer</button>
+</form>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% block recherche %}
+
+    {% for movie in searchs %}
+        <a href="./product.php?id={{movie.id}}" class="ml-2 mr-2 mt-3 mb-3"><div class="search_thumbnail" style="background-image: url('{{movie.picture}}'); background-size: 100% 100%;"></div></a>
+    {% endfor %}
+
+{% endblock %}

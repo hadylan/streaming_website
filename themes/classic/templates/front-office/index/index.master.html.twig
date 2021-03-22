@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    {# include used for assemble a page cuted in differents parts #}
+    {% include('./head.html.twig') %}
+</head>
+
+<body class="container-fluid d-flex flex-column justify-content-between" style="height: 100vh">
+
+    <header class="row d-flex flex-column flex-md-row align-items-center justify-content-between mt-4 ml-4 mr-4">
+        {% include('index/index.header.block.html.twig') %}
+    </header>
+
+    {# main contain all principal components, login form or register form #}
+    <main class="container-fluid d-flex flex-column align-items-center justify-content-center">
+        <section id="content" class="row d-flex flex-column col-sm-7 col-md-6 col-lg-5 col-xl-4">
+
+            {# this if / else conditionnal display form following the current value of action variable #}
+            {% if action is not null and action is same as ('login') %}
+
+            {% include('index/login.block.html.twig') %}
+            <script src="assets/js/login.js"></script>
+
+            {% else %}
+
+            {% include('index/register.block.html.twig') %}
+            <script src="assets/js/register.js"></script>
+
+            {% endif %}
+
+        </section>
+    </main>
+
+    <footer id="footer" class="row p-0 pb-2 d-flex align-items-center justify-content-between">
+        {% include('footer.block.html.twig') %}
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+

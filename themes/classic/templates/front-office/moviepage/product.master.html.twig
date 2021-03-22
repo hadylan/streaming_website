@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    {% include('head.html.twig') %}
+    <link href="assets/css/product.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid d-flex flex-column p-0" style="height: 100vh">
+
+    <header class="row d-flex align-items-center justify-content-between mt-4 mb-4 ml-4 mr-4">
+    {% include('accueil/accueil.header.block.html.twig') %}
+    </header>
+
+    <main class="row container-fluid m-0 flex-column justify-content-center mt-5 p-0">
+        <section id="content" class=" d-flex justify-content-center align-items-around flex-column">
+            {% if play is defined and play is same as ('true') %}
+                {% include('moviepage/product.play.html.twig') %}
+            {% else %}
+                {% include('moviepage/product.block.html.twig') %}
+            {% endif %}
+        </section>
+    </main>
+
+    <footer id="footer" class="fixed-bottom row p-3 d-flex align-items-center justify-content-between">
+        {% include('footer.block.html.twig') %}
+    </footer>
+
+</body>
+
+</html>

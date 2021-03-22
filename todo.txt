@@ -1,0 +1,5 @@
+- class for token CSRF generation and validation (administration)
+- import images system for profil pictures and movies
+- password forgotten system
+- Sitemap.xml
+- Robots.txt

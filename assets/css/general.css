@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Carlito Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/Carlito-Regular.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: 'Carlito Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/Carlito-Italic.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: 'Carlito Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/Carlito-Bold.woff") format('woff');
+}
+
+.font_carlito {
+    font-family: "Carlito Regular", Georgia, 'Times New Roman', Times, serif;
+}
+
+.font_carlito_bold {
+    font-family: "Carlito Bold", Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Body */
+
+body,
+footer {
+    background-color: #1A1D29;
+}
+
+header img {
+    width: 300px;
+}

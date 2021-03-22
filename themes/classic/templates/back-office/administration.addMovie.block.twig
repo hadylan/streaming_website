@@ -1,0 +1,46 @@
+{% block content %}
+
+<form class="col-3 bg-light p-4 rounded" method="POST" action="./php_scripts/addmovie.php">
+    <div class="mb-3">
+        <label for="inputTitle" class="form-label">Titre</label>
+        <input name="title" type="text" placeholder="Titre du film" class="form-control" id="inputTitle"
+            aria-describedby="emailHelp">
+        <div class="form-text">75 chars max.</div>
+    </div>
+    <div class="mb-3">
+        <label for="inputDescription" class="form-label">Description</label>
+        <input name="description" placeholder="Description du film" type="text" class="form-control"
+            id="inputDescription">
+        <div class="form-text">255 chars max.</div>
+    </div>
+    <div class="mb-3">
+        <label for="inputImage" class="form-label">Image du film</label>
+        <input name="picture" placeholder="Lien vers l'affiche du film" type="text" class="form-control"
+            id="inputImage">
+    </div>
+    <div class="mb-4">
+        <label for="inputLink" class="form-label">Lien du film</label>
+        <input name="link" placeholder="Lien vers la bande annonce" type="text" class="form-control" id="inputLink">
+    </div>
+    <div class="mb-3">
+        <select name="id_category" class="form-select text-grey mb-3 w-100" aria-label="Catégorie" for="inputCategorie">
+            <option selected>Catégorie</option>
+            <option value="1">Film</option>
+            <option value="2">Série</option>
+        </select>
+    </div>
+    <div class="mb-2">
+        <select name="id_gender" class="form-select text-grey mb-3 w-100" aria-label="Genre">
+            <option selected>Genre</option>
+            <option value="3">Sciences</option>
+            <option value="4">Informatiques</option>
+        </select>
+    </div>
+    <div class="mb-4">
+        <label for="inputYear" class="form-label">Année</label>
+        <input name="year" placeholder="Date de sortie du film" type="text" class="form-control" id="inputYear">
+    </div>
+    <button type="submit" class="btn btn-primary">Creer</button>
+</form>
+
+{% endblock %}

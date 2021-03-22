@@ -1,0 +1,62 @@
+{% block user %}
+
+<div id="profil_content">
+<a href="./profil.php?action=edit" class="d-block"><h6 id="edit_link">Edit profil</h6></a>
+<div id="profil_box" class="w-100 d-flex justify-content-start align-items-center pt-4 pb-4 pl-5 pr-5">
+    <div id="profil_picture" class="rounded-circle overflow-hidden mr-3">
+        <img src="{{user[0].picture}}" class="img-fluid" id="profil_img"/>
+    </div>
+    <div id="profil_infos" class="d-flex flex-column">
+        <h1 class="m-0" >{{user[0].username}}</h1>
+        <h3 class="ml-1" >{{user[0].email}}</h3>
+    </div>
+</div>
+</div>
+
+
+    <style>
+
+    #profil_content{
+        width: auto;
+    }
+
+    #content {
+        height: 55vh;
+    }
+
+    #edit_link{
+        font-family: "Carlito Regular";
+        color: #d9d9d9;
+        font-size: 0.9em;
+    }
+
+    #profil_box{
+        border-radius: 5px;
+        background-color: #808080;
+    }
+
+    #profil_picture {
+        width: 125px;
+        height: 125px;
+        border: 4px solid #212529;
+    }
+
+    #profil_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #profil_infos h1 {
+        font-size: 2em;
+        font-family: "Carlito Regular";
+    }
+
+    #profil_infos h3 {
+        font-family: "Carlito Regular";
+        font-size: 0.9em;
+    }
+
+
+    </style>
+
+{% endblock %}

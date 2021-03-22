@@ -1,0 +1,25 @@
+{% block content %}
+
+<h1 class="text-uppercase ml-5">{{product[0]['title']}}</h1>
+<div id="button_box" class="d-flex ml-5">
+    <button id="play_button" onclick="play()" class="shadow w-50 rounded mr-3">LECTURE</button>
+    <button id="fav_button" class="shadow rounded-circle" style="">+</button>
+</div>
+
+<script>
+    function play() {
+        document.location.href= window.location.href+"&play=true";
+    }
+</script>
+
+<style>
+    h1 {
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    }
+    
+    main {
+        background-image: url({{product[0]['background']}});
+    }
+</style>
+
+{% endblock %}

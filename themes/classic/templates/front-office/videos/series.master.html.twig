@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    {% include('head.html.twig') %}
+</head>
+
+<body class="container-fluid d-flex flex-column p-0" style="height: 100vh">
+
+    <header class="row d-flex align-items-center justify-content-between mt-4 mb-4 ml-4 mr-4">
+    {% include('accueil/accueil.header.block.html.twig') %}
+    </header>
+
+    <main class="row container-fluid m-0 flex-column align-items-center justify-content-center mt-5">
+        <section id="content" class="d-flex justify-content-center align-items-start w-100 flex-wrap" style="overflow: hidden;">
+                {% include('videos/movies.block.html.twig') %}
+        </section>
+    </main>
+
+    <footer id="footer" class="fixed-bottom row p-3 d-flex align-items-center justify-content-between">
+        {% include('footer.block.html.twig') %}
+    </footer>
+
+</body>
+
+</html>

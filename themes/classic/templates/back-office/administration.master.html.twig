@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    {% include('./head.html.twig') %}
+</head>
+
+<body class="container-fluid d-flex flex-column p-0" style="height: 100vh">
+
+    <header class="row d-flex align-items-center justify-content-between mt-4 mb-4 ml-4 mr-4">
+        {% include('./accueil.header.block.html.twig') %}
+    </header>
+
+    <main class="row container-fluid m-0 flex-column align-items-center justify-content-center mt-5">
+        <section id="content" class="d-flex flex-wrap justify-content-between align-items-start col-12 flex-wrap"
+            style="overflow: hidden;">
+
+            {% include('./administration.addMovie.block.twig') %}
+
+            {% include('./administration.updateMovie.block.twig') %}
+
+            {% include('./administration.deleteMovie.block.twig') %}
+
+            {% include('./administration.addGender.block.html.twig') %}
+            
+
+        </section>
+    </main>
+
+    <footer id="footer" class="fixed-bottom row p-3 d-flex align-items-center justify-content-between">
+        {% include('./footer.block.html.twig') %}
+    </footer>
+
+    <script src="./assets/js/functions/fetchRessource.js"></script>
+    <script src="./assets/js/functions/getMovies.js"></script>
+    <script src="./assets/js/functions/updateMovie.js"></script>
+    <script src="./assets/js/functions/deleteMovie.js"></script>
+
+</body>
+
+</html>
