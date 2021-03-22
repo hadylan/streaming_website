@@ -13,6 +13,12 @@ This is a simple streaming site, including the following features :
 - Simple profile customization
 - Administration panel allowing dynamic management of movies
 
+<br/>
+<br/>
+<img src="https://zupimages.net/up/21/12/ezaw.png">
+<br/>
+<br/>
+
 ## Build With
 * [Bootstrap](https://getbootstrap.com/)
 * [Twig](https://twig.symfony.com/)
